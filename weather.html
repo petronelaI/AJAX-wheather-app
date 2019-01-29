@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<script src="weather.js"></script>
+</head>
+	<body>
+		<div id="zona_de_cautare">
+			<input id="cauta_oras" type="text" name="search_field">
+			<button onclick="getVreme()">Afiseaza vremea</button>
+			<button onclick="getVremeUrmZile()">Afiseaza prognoza</button>
+		</div>
+
+		<div id="vremea_rand_2">
+			<div id="vreme_si_harta">
+				<div id=vremea_acum>
+					<h3 class="title_vremea_acum">Vremea acum</h3>
+					<hr>
+					<div class="detalii_vremea_acum">
+						<img id="vreme_icon"><br />
+						Descriere:<span id="des"></span><br />
+						Umiditate:<span id="umi"></span><br />
+						Presiune:<span id="pres"></span><br />
+						Temperatura curenta:<span id="temp"></span><br />
+						Minima zilei:<span id="minZi">Minima zilei:</span><br />
+						Maxima zilei:<span id="maxZi"></span><br />
+					</div>
+				</div>
+				<div id="harta">
+					<iframe
+						id="coordHarta"
+						width="1300"
+						height="450"
+						frameborder="0" 
+						style="border:0">
+					</iframe>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		
+		<div id="vremea_in_urmatoarele_zile">
+			<h3 class="title_VrmZileUrm">Vremea in urmatoarele zile</h3>
+			<hr><br />
+			<div id="DesTabelVrmUrm">
+				<div id="ziua1"></div>
+				<div id="ziua2"></div>
+				<div id="ziua3"></div>
+				<div id="ziua4"></div>
+				<div id="ziua5"></div>
+				<div id="ziua6"></div>
+			</div>
+		</div>
+		
+	</body>
+</html>

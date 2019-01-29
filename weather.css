@@ -1,0 +1,22 @@
+body {
+	background-color: lightblue;
+	padding: 20px 10px;
+}
+
+#zona_de_cautare, #vreme_si_harta, #vremea_in_urmatoarele_zile {
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+}
+
+#vremea_acum{
+	float: left;
+}
+
+#harta {
+	float: right;
+}
+
+#DesTabelVrmUrm {
+	display: flex;
+}
